@@ -154,11 +154,11 @@ class App extends Component {
                : (
                 this.state.route === 'signin' || this.state.route === 'signout'
                 ? <div>
-                        <Particles type='circle' bg={true} style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex:-1 }}/>
+                        <Particles/>
                         <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                   </div>
                 : <div>
-                      <Particles type='circle' bg={true} style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex:-1 }}/>
+                      <Particles/>
                       <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                   </div>
                 )
