@@ -154,11 +154,9 @@ class App extends Component {
                : (
                 this.state.route === 'signin' || this.state.route === 'signout'
                 ? <div>
-                        <Particles/>
                         <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                   </div>
                 : <div>
-                      <Particles/>
                       <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                   </div>
                 )
