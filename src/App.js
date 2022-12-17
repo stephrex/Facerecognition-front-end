@@ -142,7 +142,7 @@ class App extends Component {
             <Navigation isSignedIn= {this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
             {this.state.route === 'home'
                ? <div> 
-                     <Particles color="#FFFFFF" num={150} type='cobweb' bg={true} style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex:-1 }}/>
+                     <Particles color="#FFFFFF" num={38} type='cobweb' bg={true} style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex:-1 }}/>
                      <Logo/>
                      <Rank name={this.state.user.name} entries={this.state.user.entries} />
                      <Imagelinkform 
