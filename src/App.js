@@ -108,12 +108,8 @@ class App extends Component {
                 })
                   .then(response => response.json())
                   .then(count => {
-                    return (
-                         const a = this.setState(Object.assign(this.state.user, { entries:count}))
-                    console.log(a);
-                        )
-                   
-                  })
+                     this.setState(Object.assign(this.state.user, { entries:count}))
+                   })
                   .catch(console.log)
             }
         this.displayFaceBox(this.calculateFaceBox(result))
